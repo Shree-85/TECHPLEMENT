@@ -75,10 +75,10 @@ This guide will walk you through the steps to deploy a two-tier WordPress applic
 3. Extract the compressed file `tar xzvf latest.tar.gz`.
 4. Create an empty `.htaccess` file to be used by wordpress and apache `touch /tmp/wordpress/.htaccess`.
 5. Create the `upgrade` directory so that wordpress can easily update on it's own `mkdir /tmp/wordpress/wp-content/upgrade`.
-6. Copy the content of wordpress to your document root `sudo cp -a /tmp/wordpress/. /var/www/your_domain`.
+6. Copy the content of wordpress to your document root `sudo cp -a /tmp/wordpress/. /var/www/wordpress`.
 7. Adjust the ownership of the directory and their folders and files
 ```
-sudo chown -R www-data:www-data /var/www/your_domain
+sudo chown -R www-data:www-data /var/www/wordpress
 sudo find /var/www/wordpress/ -type d -exec chmod 750 {} \;
 sudo find /var/www/wordpress/ -type f -exec chmod 640 {} \;
 ```
