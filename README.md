@@ -20,6 +20,10 @@ This guide will walk you through the steps to deploy a two-tier WordPress applic
 8. Review and launch the instance, selecting your SSH key pair.
 9. Connect to the instance using SSH: `ssh -i /path/to/your/key.pem ubuntu@your-instance-ip`.
 
+
+FOR THE MICROSERVICE TYPE:
+-Create another ec2 type ,then attach in the rds database [In the connectivity part " Connect to an EC2 compute resource, choose an ec2 instance"
+
 ## Step 2: Launch the RDS Instance
 
 1. Navigate to the RDS Dashboard in AWS.
